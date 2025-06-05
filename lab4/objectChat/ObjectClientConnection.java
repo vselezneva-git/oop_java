@@ -28,7 +28,7 @@ public class ObjectClientConnection {
         this.writer = new ObjectMessageWriter(out);
         this.reader = new ObjectMessageReader(in);
 
-        // 🟢 Отправляем первое сообщение с именем пользователя
+
         Message loginMessage = new Message(username, "вошёл в чат");
         writer.write(loginMessage);
 
